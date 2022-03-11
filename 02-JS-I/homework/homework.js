@@ -67,9 +67,13 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(x==y)
-  return true
+  if(x==y){
+    return true;
 
+  }
+  else {
+    return false;
+  }  
   
 }
 
@@ -194,7 +198,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return str + !
+  return str + "!"
 }
 
 function combinarNombres(nombre, apellido) {
