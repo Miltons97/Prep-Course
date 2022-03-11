@@ -107,6 +107,7 @@ function mayorQueCincuenta(num) {
     return true
   } else {
     return false
+  }
 }
    
 
@@ -127,7 +128,6 @@ function esPar(num) {
   } else {
     return false;
   }
-  }
   
 }
 
@@ -140,7 +140,7 @@ function esImpar(num) {
    } else { 
      return false;
    }
-   }
+}
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
