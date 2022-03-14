@@ -5,16 +5,16 @@ const nuevaString = "Milton";
 
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 32;
+const nuevoNum = 3;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -37,14 +37,14 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   var resultado=(x+y);
-  return resultado 
+  return resultado;
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   var resultado=(x-y);
-  return resultado 
+  return resultado;
   
 }
 
@@ -52,14 +52,14 @@ function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   var resultado = x*y;
-  return resultado
+  return resultado;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   var resultado= x/y;
-  return resultado
+  return resultado;
 
 }
 
@@ -79,13 +79,15 @@ function sonIguales(x, y) {
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
-  // De lo contrario, devuelve "false"
+  // De lo contrario, devuelve "false" // 
   // Tu código: 
-  if(string1.length()===string2.length()){
+  if( str1.length === str2.length ) {
+
  return true
+  
+ } else {
+  return false
   }
-else{
- return false}
 }
 
 function menosQueNoventa(num) {
@@ -123,7 +125,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num % 4 == 0 ){
+   if( num % 2 === 0 ) {
     return true;
   } else {
     return false;
@@ -174,14 +176,15 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.floor(num);
+  return Math.ceil(num);
   
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random(num);
+  
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -189,9 +192,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero>0) return "Es positivo"
-  if(num<0) return "Es negativo"
-   return false
+  if(numero > 0 ){
+    return "Es positivo"
+  }
+    else if(numero < 0){
+      return "Es negativo"
+    }
+    return false;
+  
 }
 
 function agregarSimboloExclamacion(str) {
@@ -205,7 +213,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-   return nombre + "" + apellido;
+   return ( nombre + " " + apellido);
   
 }
 
@@ -213,7 +221,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código: 
-     return Hola + ""+ nombre;
+     return "Hola" + " " + nombre + "!"; 
   
 }
 
@@ -259,7 +267,10 @@ function esVocal(letra){
   //Escribe tu código aquí
   var vocal= letra=== "a"||letra === "e"|| letra === "i"|| letra === "o"|| letra === "u";
   if(letra.length>1) return "Dato incorrecto";
-  if (vocal) return "Es vocal";
+  
+ if (vocal) return "Es vocal";
+  
+
   return "Dato incorrecto";
   
 }
