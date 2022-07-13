@@ -1,0 +1,50 @@
+h1{
+    color: rgb(255, 204, 0);
+}
+h3{
+    font-size: 3rem;
+    color: goldenrod;
+}
+
+img{
+    width:400px;
+}
+a{
+    color: aqua;
+}
+
+.thirdDiv{
+    width:500px;
+    height: 600px;
+    background-color: rgb(66, 67, 67);
+
+    padding: 50px;
+    border: solid burlywood;
+}
+
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+    color: rgb(0, 0, 0);
+
+    padding-left: 1rem;
+
+    font-size: 2rem;
+    font-weight:600;
+}
+
+
+div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-image: url(../Styles/img/fondo.png);
+    
+   
+}
+
+
+
